@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69,276</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1701239964034</td><td rowspan="1">68266</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Positive test on Submitting the order&quot;</td><td>&quot;Purchase the order from Ecommerce&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-kxe-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1028, 27). Other element would receive the click: &lt;div _ngcontent-kxe-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=119.0.6045.199)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae9066e89f5c8b18373a0dbac0f16b77, clickElement {id=3B6A48FC634D3A692E7902FDE8C82DA1_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\prati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52383/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ae9066e89f5c8b18373a0dbac0f16b77)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: ae9066e89f5c8b18373a0dbac0f16b77
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at framework.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:55)
+	at framework.stepDefination.StepDefinationImplementation.chechout_and_submit_the_order(StepDefinationImplementation.java:50)
+	at ✽.Checkout ZARA COAT 3 and submit the order(file:///C:/Users/prati/eclipse-workspace/FrameWork-1/src/test/java/cucumber/PurchaseOrder.feature:30)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

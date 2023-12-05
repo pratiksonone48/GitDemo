@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-29T12:09:23 IST" name="Default suite" finished-at="2023-11-29T12:10:32 IST" duration-ms="69276">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6ed3ccb2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-29T12:09:23 IST" name="Default test" finished-at="2023-11-29T12:10:32 IST" duration-ms="69276">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@6ed3ccb2]" started-at="2023-11-29T12:09:23 IST" name="setUpClass" finished-at="2023-11-29T12:09:24 IST" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@506a1372]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6ed3ccb2]" started-at="2023-11-29T12:09:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-29T12:10:32 IST" duration-ms="68266" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test on Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-kxe-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1028, 27). Other element would receive the click: <div _ngcontent-kxe-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=119.0.6045.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae9066e89f5c8b18373a0dbac0f16b77, clickElement {id=3B6A48FC634D3A692E7902FDE8C82DA1_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\prati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52383/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ae9066e89f5c8b18373a0dbac0f16b77)] -> css selector: [routerlink*='cart']]
+Session ID: ae9066e89f5c8b18373a0dbac0f16b77]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-kxe-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1028, 27). Other element would receive the click: <div _ngcontent-kxe-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=119.0.6045.199)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae9066e89f5c8b18373a0dbac0f16b77, clickElement {id=3B6A48FC634D3A692E7902FDE8C82DA1_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\prati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52383/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ae9066e89f5c8b18373a0dbac0f16b77)] -> css selector: [routerlink*='cart']]
+Session ID: ae9066e89f5c8b18373a0dbac0f16b77
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at framework.AbstractComponents.AbstractComponent.goToCartPage(AbstractComponent.java:55)
+at framework.stepDefination.StepDefinationImplementation.chechout_and_submit_the_order(StepDefinationImplementation.java:50)
+at ✽.Checkout ZARA COAT 3 and submit the order(file:///C:/Users/prati/eclipse-workspace/FrameWork-1/src/test/java/cucumber/PurchaseOrder.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@6ed3ccb2]" started-at="2023-11-29T12:10:32 IST" name="tearDownClass" finished-at="2023-11-29T12:10:32 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
